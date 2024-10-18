@@ -1,0 +1,25 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   background-color: #282c34;
+   color: white;
+   font-family: Arial,sans-serif;
+}
+
+.container{
+    overflow: hidden;
+}
+.animated-text{
+  opacity: 0;
+  transform: translate(-30px);
+  animation: fadeinslideup 3s forwards;
+}
+
+@keyframes fadeinslideup{}
+  to {  
+  opacity: 0;
+  animation:translateY(0);
+}
